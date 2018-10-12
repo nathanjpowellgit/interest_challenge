@@ -12,20 +12,13 @@ namespace InterestChallenge.Person
         public List<IWallet> Wallets { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:InterestChallenge.Person.WalletPerson"/> class.
-        /// </summary>
-        public WalletPerson()
-        {
-            Wallets = new List<IWallet>();
-        }
-
-        /// <summary>
         /// Adds a wallet.
         /// </summary>
         /// <returns>The wallet person.</returns>
         /// <param name="wallet">Wallet.</param>
         public WalletPerson AddWallet(IWallet wallet)
         {
+            Wallets = Wallets ?? new List<IWallet>();
             Wallets.Add(wallet);
 
             return this;

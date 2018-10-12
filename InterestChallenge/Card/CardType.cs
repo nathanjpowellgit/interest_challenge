@@ -1,4 +1,5 @@
 ﻿namespace InterestChallenge.Card
+
 {
     public abstract class CardType : ICard
     {

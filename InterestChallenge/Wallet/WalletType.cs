@@ -12,20 +12,13 @@ namespace InterestChallenge.Wallet
         public List<ICard> Cards { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:InterestChallenge.Wallet.WalletType"/> class.
-        /// </summary>
-        public WalletType()
-        {
-            Cards = new List<ICard>();
-        }
-
-        /// <summary>
         /// Adds the card.
         /// </summary>
         /// <returns>The wallet.</returns>
         /// <param name="card">Card.</param>
         public WalletType AddCard(ICard card)
         {
+            Cards = Cards ?? new List<ICard>();
             Cards.Add(card);
 
             return this;

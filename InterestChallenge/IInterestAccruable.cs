@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace InterestChallenge
+﻿namespace InterestChallenge
 {
     public interface IInterestAccruable
     {

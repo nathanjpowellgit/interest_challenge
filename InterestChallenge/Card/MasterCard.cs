@@ -1,4 +1,5 @@
 ﻿namespace InterestChallenge.Card
+
 {
     public class MasterCard : CardType
     {
